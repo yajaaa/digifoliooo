@@ -1,0 +1,15 @@
+
+{% block title %}Welcome {% endblock %}
+{% block head %}Welcome {% endblock %}
+{% block content %}
+{% load i18n %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+<a href="/pages/home/" style="padding:5px;">Home</a>
+<a href="/pages/new/" style="padding:5px;">Add Product</a>
+<a href="/pages/list/" style="padding:5px;">Show Products</a>
+
+    {% endblock %}
+
+
